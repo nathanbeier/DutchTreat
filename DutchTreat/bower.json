@@ -1,0 +1,25 @@
+{
+  "name": "asp.net",
+  "dependencies": {
+    "jQuery": "3.2.1",
+    "bootstrap": "~3.3.7",
+    "jquery-validation": "~1.17.0",
+    "jquery-validation-unobtrusive": "~3.2.6",
+    "font-awesome": "~4.7.0"
+  },
+  "authors": [
+    "nathanbeier <nathan.beier@outlook.com>"
+  ],
+  "description": "simple .net core 2.0 projects",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "wwwroot/lib",
+    "test",
+    "tests"
+  ]
+}
