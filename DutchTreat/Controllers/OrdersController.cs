@@ -3,101 +3,104 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using DutchTreat.Data;
 using DutchTreat.Data.Entities;
 using DutchTreat.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace DutchTreat.Controllers
+namespace DutchTreat.Controllers 
 {
-    [Route("api/[Controller]")]
-    public class OrdersController : Controller
+    [Route ("api/[Controller]")]
+    public class OrdersController : Controller 
     {
         private readonly IDutchRepository _repository;
         private readonly ILogger<OrdersController> _logger;
+        private readonly IMapper _mapper;
 
-        public OrdersController(IDutchRepository repository, ILogger<OrdersController> logger)
+        public OrdersController (IDutchRepository repository, ILogger<OrdersController> logger, IMapper mapper) 
         {
+            _mapper = mapper;
             _repository = repository;
             _logger = logger;
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get () 
         {
-            try
+            try 
             {
-                return Ok(_repository.GetAllOrders());
-            }
-            catch (Exception ex)
+                return Ok (_repository.GetAllOrders ());
+            } 
+            catch (Exception ex) 
             {
-                _logger.LogError($"Failed to get orders: {ex}");
-                return BadRequest("Failed to get orders");
+                _logger.LogError ($"Failed to get orders: {ex}");
+                return BadRequest ("Failed to get orders");
             }
         }
 
-        [HttpGet("{id:int}")]
-        public IActionResult Get(int id)
+        [HttpGet ("{id:int}")]
+        public IActionResult Get (int id) 
         {
-            try
+            try 
             {
                 var order = _repository.GetOrderById(id);
 
-                if (order != null) return Ok(order);
-                else return NotFound();
+                if (order != null) return Ok(_mapper.Map<Order, OrderViewModel>(order));
+                else return NotFound ();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Failed to get orders: {ex}");
-                return BadRequest("Failed to get orders");
+                _logger.LogError ($"Failed to get orders: {ex}");
+                return BadRequest ("Failed to get orders");
             }
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]OrderViewModel model)
+        public IActionResult Post ([FromBody] OrderViewModel model) 
         {
             //add it to db
-            try
+            try 
             {
-                if (ModelState.IsValid)
+                if (ModelState.IsValid) 
                 {
-                    var newOrder = new Order()
+                    var newOrder = new Order () 
                     {
                         OrderDate = model.OrderDate,
                         OrderNumber = model.OrderNumber,
                         Id = model.OrderId
                     };
-                    
-                    if (newOrder.OrderDate == DateTime.MinValue)
+
+                    if (newOrder.OrderDate == DateTime.MinValue) 
                     {
                         newOrder.OrderDate = DateTime.Now;
                     }
-                    
-                    _repository.AddEntity(model);
-                    if (_repository.SaveAll())
+
+                    _repository.AddEntity (model);
+                    if (_repository.SaveAll ()) 
                     {
-                        var vm = new OrderViewModel()
+                        var vm = new OrderViewModel () 
                         {
                             OrderId = newOrder.Id,
                             OrderDate = newOrder.OrderDate,
                             OrderNumber = newOrder.OrderNumber
                         };
-                        
-                        return Created($"/api/orders/{vm.OrderId}", vm);
+
+                        return Created ($"/api/orders/{vm.OrderId}", vm);
                     }
-                }
-                else
+                } 
+                else 
                 {
-                    return BadRequest(ModelState);
+                    return BadRequest (ModelState);
                 }
-            }
-            catch (Exception ex)
+            } 
+            catch (Exception ex) 
             {
-                _logger.LogError($"Failed to save a new order: {ex}");
+                _logger.LogError ($"Failed to save a new order: {ex}");
             }
 
-            return BadRequest("Failed to process order");
+            return BadRequest ("Failed to process order");
         }
     }
 }

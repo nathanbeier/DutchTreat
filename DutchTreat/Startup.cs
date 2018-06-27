@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Diagnostics;
 using Newtonsoft.Json;
+using AutoMapper;
 
 namespace DutchTreat
 {
@@ -31,6 +32,8 @@ namespace DutchTreat
                 cfg.UseMySql(_config.GetConnectionString("DutchConnectionString"));
             }
             );
+
+            services.AddAutoMapper();
 
             services.AddTransient<IMailService, NullMailService>();
 
