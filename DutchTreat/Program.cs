@@ -28,7 +28,6 @@ namespace DutchTreat
             builder.Sources.Clear();
 
             builder.AddJsonFile("config.json", false, true)
-                .AddXmlFile("config.xml", true)
                 .AddEnvironmentVariables();
         }
     }
