@@ -53,6 +53,13 @@ namespace DutchTreat.Controllers
             }
         }
 
+        [HttpPost]
+        public IActionResult Post([FromBody]Order model)
+        {
+            //add to database
+            return Ok();
+        }
+
 
     }
 }
