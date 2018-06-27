@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DutchTreat.Data;
 using DutchTreat.Data.Entities;
+using DutchTreat.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -54,23 +55,49 @@ namespace DutchTreat.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]Order model)
+        public IActionResult Post([FromBody]OrderViewModel model)
         {
-           //add it to db
-           try
-           {
-               _repository.AddEntity(model);
-               if (_repository.SaveAll())
-               {
-                    return Created($"/api/orders/{model.Id}", model);
-               }
-           }
-           catch (Exception ex)
-           {
+            //add it to db
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var newOrder = new Order()
+                    {
+                        OrderDate = model.OrderDate,
+                        OrderNumber = model.OrderNumber,
+                        Id = model.OrderId
+                    };
+                    
+                    if (newOrder.OrderDate == DateTime.MinValue)
+                    {
+                        newOrder.OrderDate = DateTime.Now;
+                    }
+                    
+                    _repository.AddEntity(model);
+                    if (_repository.SaveAll())
+                    {
+                        var vm = new OrderViewModel()
+                        {
+                            OrderId = newOrder.Id,
+                            OrderDate = newOrder.OrderDate,
+                            OrderNumber = newOrder.OrderNumber
+                        };
+                        
+                        return Created($"/api/orders/{vm.OrderId}", vm);
+                    }
+                }
+                else
+                {
+                    return BadRequest(ModelState);
+                }
+            }
+            catch (Exception ex)
+            {
                 _logger.LogError($"Failed to save a new order: {ex}");
-           }
+            }
 
-           return BadRequest("Failed to process order");
+            return BadRequest("Failed to process order");
         }
     }
 }
