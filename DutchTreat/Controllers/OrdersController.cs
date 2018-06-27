@@ -56,10 +56,21 @@ namespace DutchTreat.Controllers
         [HttpPost]
         public IActionResult Post([FromBody]Order model)
         {
-            //add to database
-            return Ok();
+           //add it to db
+           try
+           {
+               _repository.AddEntity(model);
+               if (_repository.SaveAll())
+               {
+                    return Created($"/api/orders/{model.Id}", model);
+               }
+           }
+           catch (Exception ex)
+           {
+                _logger.LogError($"Failed to save a new order: {ex}");
+           }
+
+           return BadRequest("Failed to process order");
         }
-
-
     }
 }
