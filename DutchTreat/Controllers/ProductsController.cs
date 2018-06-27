@@ -23,9 +23,18 @@ namespace DutchTreat.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Product> Get()
+        public IActionResult Get()
         {
-            return _repository.GetAllProducts();
+            try
+            {
+                //return Ok returns 200 status code
+                return Ok(_repository.GetAllProducts());
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Failed to get all products: {ex}");
+                return BadRequest("Bad Request");
+            }
         }
     }
 }
