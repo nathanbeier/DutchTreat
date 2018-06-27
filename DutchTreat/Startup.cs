@@ -1,10 +1,15 @@
-﻿using DutchTreat.Data;
+﻿using System;
+using System.Net;
+using System.Text;
+using DutchTreat.Data;
 using DutchTreat.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore; 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Diagnostics;
+using Newtonsoft.Json;
 
 namespace DutchTreat
 {
@@ -23,7 +28,7 @@ namespace DutchTreat
         {
             services.AddDbContext<DutchContext>(cfg =>
             {
-                cfg.UseSqlServer(_config.GetConnectionString("DutchConnectionString"));
+                cfg.UseMySql(_config.GetConnectionString("DutchConnectionString"));
             }
             );
 

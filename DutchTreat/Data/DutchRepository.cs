@@ -20,11 +20,19 @@ namespace DutchTreat.Data
 
         public IEnumerable<Product> GetAllProducts()
         {
-            _logger.LogInformation("GetAllProducts was ran");
+            try
+            {
+                _logger.LogInformation("GetAllProducts was ran");
 
-            return _ctx.Products
-                .OrderBy(p => p.Title)
-                .ToList();
+                return _ctx.Products
+                    .OrderBy(p => p.Title)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Failed to get all product : {ex}");
+                return null;
+            }
         }
 
         public IEnumerable<Product> GetProductsByCategory(string category)
