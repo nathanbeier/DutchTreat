@@ -30,20 +30,23 @@ namespace DutchTreat.Controllers
         public IActionResult Get(int orderid)
         {
             var order = _repository.GetOrderById(orderid);
-            if (order != null) 
-            {
-                return Ok(_mapper.Map<IEnumerable<OrderItem>, IEnumerable<OrderItemViewModel>>(order.Items));
-            }
-            else
-            {
+            if (order != null) return Ok(_mapper.Map<IEnumerable<OrderItem>, IEnumerable<OrderItemViewModel>>(order.Items));
             return NotFound();
-            }
         }
 
         [HttpGet("{id}")]
-        public IActionResult Get(int orderid, int OrderItemId)
+        public IActionResult Get(int orderid, int id)
         {
-
+            var order = _repository.GetOrderById(orderid);
+            if (order != null) 
+            {
+                var item = order.Items.Where(i => i.Id == id).FirstOrDefault();
+                if (item != null)
+                {
+                    return Ok(_mapper.Map<OrderItem, OrderItemViewModel>(item));
+                }           
+            }
+            return NotFound();
         }
     }
 }
