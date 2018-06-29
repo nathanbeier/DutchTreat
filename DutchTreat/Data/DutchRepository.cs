@@ -60,9 +60,9 @@ namespace DutchTreat.Data
         public Order GetOrderById(int id)
         {
             return _ctx.Orders.Include(o => o.Items)
-            .ThenInclude(i => i.Product)
-            .Where(o => o.Id == id)
-            .FirstOrDefault();
+                .ThenInclude(i => i.Product)
+                .Where(o => o.Id == id)
+                .FirstOrDefault();
         }
 
         public IEnumerable<Product> GetProductsByCategory(string category)

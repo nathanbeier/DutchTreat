@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "0f040f03f9437f641777804a60d31f4ee3b5d396"
+    "signature": "f6605773f1d8b393e7cd5d8d34489306591da90a"
   },
   "compilationOptions": {
     "defines": [
@@ -23,14 +23,14 @@
     ".NETCoreApp,Version=v2.0": {
       "DutchTreat/1.0.0": {
         "dependencies": {
-          "AutoMapper": "6.1.1",
+          "AutoMapper": "7.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.0.1",
           "Microsoft.AspNetCore.All": "2.0.8",
           "Microsoft.EntityFrameworkCore": "2.1.1",
           "Microsoft.NETCore.App": "2.0.0",
           "MySql.Data": "8.0.11",
           "Newtonsoft.Json": "11.0.2",
-          "Pomelo.EntityFrameworkCore.MySql": "2.0.1"
+          "Pomelo.EntityFrameworkCore.MySql": "2.1.0-rc1-final"
         },
         "runtime": {
           "DutchTreat.dll": {}
@@ -39,37 +39,20 @@
           "DutchTreat.dll": {}
         }
       },
-      "AutoMapper/6.1.1": {
+      "AutoMapper/7.0.1": {
         "dependencies": {
-          "Microsoft.CSharp": "4.4.0",
-          "System.Collections": "4.3.0",
-          "System.Collections.Concurrent": "4.3.0",
-          "System.Collections.Specialized": "4.3.0",
-          "System.ComponentModel.TypeConverter": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.Linq.Queryable": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Text.RegularExpressions": "4.3.0",
-          "System.Threading": "4.3.0"
+          "System.ValueTuple": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard1.3/AutoMapper.dll": {}
+          "lib/netcoreapp2.0/AutoMapper.dll": {}
         },
         "compile": {
-          "lib/netstandard1.3/AutoMapper.dll": {}
+          "lib/netcoreapp2.0/AutoMapper.dll": {}
         }
       },
       "AutoMapper.Extensions.Microsoft.DependencyInjection/3.0.1": {
         "dependencies": {
-          "AutoMapper": "6.1.1",
+          "AutoMapper": "7.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.DependencyModel": "2.0.3"
         },
@@ -192,8 +175,8 @@
           "Microsoft.Extensions.Configuration.Json": "2.0.2",
           "Microsoft.Extensions.Configuration.UserSecrets": "2.0.2",
           "Microsoft.Extensions.Logging": "2.1.1",
-          "Microsoft.Extensions.Logging.Configuration": "2.0.2",
-          "Microsoft.Extensions.Logging.Console": "2.0.2",
+          "Microsoft.Extensions.Logging.Configuration": "2.1.0",
+          "Microsoft.Extensions.Logging.Console": "2.1.0",
           "Microsoft.Extensions.Logging.Debug": "2.0.2"
         },
         "runtime": {
@@ -291,9 +274,9 @@
           "Microsoft.Data.Sqlite": "2.0.1",
           "Microsoft.Data.Sqlite.Core": "2.0.1",
           "Microsoft.EntityFrameworkCore": "2.1.1",
-          "Microsoft.EntityFrameworkCore.Design": "2.0.3",
+          "Microsoft.EntityFrameworkCore.Design": "2.1.0",
           "Microsoft.EntityFrameworkCore.InMemory": "2.0.3",
-          "Microsoft.EntityFrameworkCore.Relational": "2.0.3",
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "2.0.3",
@@ -329,14 +312,14 @@
           "Microsoft.Extensions.Logging": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.AzureAppServices": "2.0.2",
-          "Microsoft.Extensions.Logging.Configuration": "2.0.2",
-          "Microsoft.Extensions.Logging.Console": "2.0.2",
+          "Microsoft.Extensions.Logging.Configuration": "2.1.0",
+          "Microsoft.Extensions.Logging.Console": "2.1.0",
           "Microsoft.Extensions.Logging.Debug": "2.0.2",
           "Microsoft.Extensions.Logging.EventSource": "2.0.2",
           "Microsoft.Extensions.Logging.TraceSource": "2.0.2",
           "Microsoft.Extensions.ObjectPool": "2.0.0",
           "Microsoft.Extensions.Options": "2.1.1",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.2",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.0",
           "Microsoft.Extensions.Primitives": "2.1.1",
           "Microsoft.Extensions.WebEncoders": "2.0.2",
           "Microsoft.Net.Http.Headers": "2.0.3",
@@ -366,7 +349,7 @@
           "Microsoft.Extensions.Configuration.Json": "2.0.2",
           "Microsoft.Extensions.DiagnosticAdapter": "2.0.1",
           "Microsoft.Extensions.Logging": "2.1.1",
-          "Microsoft.Extensions.Logging.Configuration": "2.0.2"
+          "Microsoft.Extensions.Logging.Configuration": "2.1.0"
         },
         "runtime": {
           "lib/netcoreapp2.0/Microsoft.AspNetCore.ApplicationInsights.HostingStartup.dll": {}
@@ -683,7 +666,7 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/2.0.3": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.0.3",
-          "Microsoft.EntityFrameworkCore.Relational": "2.0.3"
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {}
@@ -837,7 +820,7 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/2.0.3": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity": "2.0.3",
-          "Microsoft.EntityFrameworkCore.Relational": "2.0.3",
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.0",
           "Microsoft.Extensions.Identity.Stores": "2.0.3"
         },
         "runtime": {
@@ -849,7 +832,7 @@
       },
       "Microsoft.AspNetCore.JsonPatch/2.0.0": {
         "dependencies": {
-          "Microsoft.CSharp": "4.4.0",
+          "Microsoft.CSharp": "4.5.0",
           "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
@@ -1107,7 +1090,7 @@
       "Microsoft.AspNetCore.NodeServices/2.0.4": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.3",
-          "Microsoft.Extensions.Logging.Console": "2.0.2",
+          "Microsoft.Extensions.Logging.Console": "2.1.0",
           "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
@@ -1478,7 +1461,7 @@
           "System.Threading.Tasks": "4.3.0",
           "System.Threading.Tasks.Parallel": "4.3.0",
           "System.Threading.Thread": "4.3.0",
-          "System.ValueTuple": "4.4.0",
+          "System.ValueTuple": "4.5.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0",
           "System.Xml.XPath.XDocument": "4.3.0",
@@ -1515,7 +1498,7 @@
           "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {}
         }
       },
-      "Microsoft.CSharp/4.4.0": {},
+      "Microsoft.CSharp/4.5.0": {},
       "Microsoft.Data.Edm/5.8.2": {
         "runtime": {
           "lib/netstandard1.1/Microsoft.Data.Edm.dll": {}
@@ -1658,9 +1641,10 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/2.1.1": {},
-      "Microsoft.EntityFrameworkCore.Design/2.0.3": {
+      "Microsoft.EntityFrameworkCore.Design/2.1.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "2.0.3"
+          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
@@ -1680,11 +1664,9 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/2.0.3": {
+      "Microsoft.EntityFrameworkCore.Relational/2.1.0": {
         "dependencies": {
-          "Microsoft.CSharp": "4.4.0",
-          "Microsoft.EntityFrameworkCore": "2.1.1",
-          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1"
+          "Microsoft.EntityFrameworkCore": "2.1.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
@@ -1702,7 +1684,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite.Core/2.0.3": {
         "dependencies": {
           "Microsoft.Data.Sqlite.Core": "2.0.1",
-          "Microsoft.EntityFrameworkCore.Relational": "2.0.3"
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {}
@@ -1713,7 +1695,7 @@
       },
       "Microsoft.EntityFrameworkCore.SqlServer/2.0.3": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "2.0.3",
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.0",
           "System.Data.SqlClient": "4.4.3"
         },
         "runtime": {
@@ -1725,7 +1707,7 @@
       },
       "Microsoft.EntityFrameworkCore.Tools/2.0.3": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "2.0.3"
+          "Microsoft.EntityFrameworkCore.Design": "2.1.0"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/2.1.1": {
@@ -2091,8 +2073,8 @@
           "Microsoft.Extensions.Configuration.Json": "2.0.2",
           "Microsoft.Extensions.Logging": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
-          "Microsoft.Extensions.Logging.Configuration": "2.0.2",
-          "System.ValueTuple": "4.4.0"
+          "Microsoft.Extensions.Logging.Configuration": "2.1.0",
+          "System.ValueTuple": "4.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.AzureAppServices.dll": {}
@@ -2101,10 +2083,10 @@
           "lib/netstandard2.0/Microsoft.Extensions.Logging.AzureAppServices.dll": {}
         }
       },
-      "Microsoft.Extensions.Logging.Configuration/2.0.2": {
+      "Microsoft.Extensions.Logging.Configuration/2.1.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.1.1",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.2"
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Configuration.dll": {}
@@ -2113,10 +2095,11 @@
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Configuration.dll": {}
         }
       },
-      "Microsoft.Extensions.Logging.Console/2.0.2": {
+      "Microsoft.Extensions.Logging.Console/2.1.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
-          "Microsoft.Extensions.Logging": "2.1.1"
+          "Microsoft.Extensions.Logging": "2.1.1",
+          "Microsoft.Extensions.Logging.Configuration": "2.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Console.dll": {}
@@ -2179,7 +2162,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
         }
       },
-      "Microsoft.Extensions.Options.ConfigurationExtensions/2.0.2": {
+      "Microsoft.Extensions.Options.ConfigurationExtensions/2.1.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
           "Microsoft.Extensions.Configuration.Binder": "2.1.1",
@@ -2402,7 +2385,7 @@
           "lib/netcoreapp2.0/MySql.Data.dll": {}
         }
       },
-      "MySqlConnector/0.32.0": {
+      "MySqlConnector/0.40.4": {
         "dependencies": {
           "System.Buffers": "4.4.0",
           "System.Data.Common": "4.3.0",
@@ -2439,12 +2422,12 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Pomelo.EntityFrameworkCore.MySql/2.0.1": {
+      "Pomelo.EntityFrameworkCore.MySql/2.1.0-rc1-final": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "2.0.3",
-          "Microsoft.EntityFrameworkCore.Relational": "2.0.3",
-          "Microsoft.Extensions.Logging.Console": "2.0.2",
-          "MySqlConnector": "0.32.0",
+          "Microsoft.EntityFrameworkCore.Design": "2.1.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.0",
+          "Microsoft.Extensions.Logging.Console": "2.1.0",
+          "MySqlConnector": "0.40.4",
           "Pomelo.JsonObject": "1.1.1"
         },
         "runtime": {
@@ -2472,7 +2455,7 @@
           "System.Diagnostics.Debug": "4.3.0",
           "System.Linq": "4.3.0",
           "System.Linq.Expressions": "4.3.0",
-          "System.Linq.Queryable": "4.3.0",
+          "System.Linq.Queryable": "4.0.1",
           "System.ObjectModel": "4.3.0",
           "System.Reflection": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
@@ -2810,38 +2793,7 @@
           "System.Threading": "4.3.0"
         }
       },
-      "System.ComponentModel/4.3.0": {
-        "dependencies": {
-          "System.Runtime": "4.3.0"
-        }
-      },
       "System.ComponentModel.Annotations/4.5.0": {},
-      "System.ComponentModel.Primitives/4.3.0": {
-        "dependencies": {
-          "System.ComponentModel": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
-      "System.ComponentModel.TypeConverter/4.3.0": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Collections.NonGeneric": "4.3.0",
-          "System.Collections.Specialized": "4.3.0",
-          "System.ComponentModel": "4.3.0",
-          "System.ComponentModel.Primitives": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        }
-      },
       "System.Configuration.ConfigurationManager/4.4.0": {
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "4.4.0"
@@ -3162,7 +3114,7 @@
           "System.Threading": "4.3.0"
         }
       },
-      "System.Linq.Queryable/4.3.0": {
+      "System.Linq.Queryable/4.0.1": {
         "dependencies": {
           "System.Collections": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
@@ -3887,7 +3839,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.ValueTuple/4.4.0": {},
+      "System.ValueTuple/4.5.0": {},
       "System.Xml.ReaderWriter/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -4180,12 +4132,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AutoMapper/6.1.1": {
+    "AutoMapper/7.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-A+6PAblvzmkXPS20nFBQJvlNSW5oEdyfN5+cxT/Du35fTNyuP5pNDXT64KT/jBgxt7CPduOM0Y7oLnNe0E5IXg==",
-      "path": "automapper/6.1.1",
-      "hashPath": "automapper.6.1.1.nupkg.sha512"
+      "sha512": "sha512-6xHbhsW09sWjjYuE1sqhYn25PQzB6UEUVPME5uhlaIz2NR2+L3+FGbVxvknJKug1BLp6VTLxDb5RcGXKMm0ieQ==",
+      "path": "automapper/7.0.1",
+      "hashPath": "automapper.7.0.1.nupkg.sha512"
     },
     "AutoMapper.Extensions.Microsoft.DependencyInjection/3.0.1": {
       "type": "package",
@@ -4852,12 +4804,12 @@
       "path": "microsoft.codeanalysis.razor/2.0.3",
       "hashPath": "microsoft.codeanalysis.razor.2.0.3.nupkg.sha512"
     },
-    "Microsoft.CSharp/4.4.0": {
+    "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vvVR/B08YVghQ4jHEloxqw2ZWzEGE1AOA5E0DioUM3ujbXz6FD3AfB/0Jl2ohJPd0nXYGwmPe1En6HTsSriq1A==",
-      "path": "microsoft.csharp/4.4.0",
-      "hashPath": "microsoft.csharp.4.4.0.nupkg.sha512"
+      "sha512": "sha512-EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
+      "path": "microsoft.csharp/4.5.0",
+      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
     },
     "Microsoft.Data.Edm/5.8.2": {
       "type": "package",
@@ -4915,12 +4867,12 @@
       "path": "microsoft.entityframeworkcore.analyzers/2.1.1",
       "hashPath": "microsoft.entityframeworkcore.analyzers.2.1.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Design/2.0.3": {
+    "Microsoft.EntityFrameworkCore.Design/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hWmbmZg0BhXD3/zuR/w3tCfLyPHpQ52GRPKt80vSmnFOnqaa+/Di7v0zOfPQMmn9gXiZ0hAtx5ywvwRNCTCzBg==",
-      "path": "microsoft.entityframeworkcore.design/2.0.3",
-      "hashPath": "microsoft.entityframeworkcore.design.2.0.3.nupkg.sha512"
+      "sha512": "sha512-Y9Pvh2kZPWjoy/XB1/iGoGHHd75p+ILRPZZwxDCHEavUbDpcyyEEFSnZEn0HOBtrVh8TrZEmrCBMtKXEyFiAfA==",
+      "path": "microsoft.entityframeworkcore.design/2.1.0",
+      "hashPath": "microsoft.entityframeworkcore.design.2.1.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.InMemory/2.0.3": {
       "type": "package",
@@ -4929,12 +4881,12 @@
       "path": "microsoft.entityframeworkcore.inmemory/2.0.3",
       "hashPath": "microsoft.entityframeworkcore.inmemory.2.0.3.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational/2.0.3": {
+    "Microsoft.EntityFrameworkCore.Relational/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fXOrHnoXUzdVc2S+NsdGcT963hbgQ3DdF9e+anB21b36HIQM0ZcLrPyI8fC5lQA9T1sFuKQ/tKvbShzm/0aWWw==",
-      "path": "microsoft.entityframeworkcore.relational/2.0.3",
-      "hashPath": "microsoft.entityframeworkcore.relational.2.0.3.nupkg.sha512"
+      "sha512": "sha512-Ln85yWfr4verWw/yFwT8cmO+DxJneXk9TKjFeG92jMb7rVsv19i1l8OCPyqfy8r8m1iYRBg/0kTQHYprmBiMoA==",
+      "path": "microsoft.entityframeworkcore.relational/2.1.0",
+      "hashPath": "microsoft.entityframeworkcore.relational.2.1.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Sqlite/2.0.3": {
       "type": "package",
@@ -5188,19 +5140,19 @@
       "path": "microsoft.extensions.logging.azureappservices/2.0.2",
       "hashPath": "microsoft.extensions.logging.azureappservices.2.0.2.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Configuration/2.0.2": {
+    "Microsoft.Extensions.Logging.Configuration/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-twYiZLG4Yxmo9rMJbCq2tlmq4vHTnDMrneS5WSsx+TvDXP6K53Yg3ObVp4rRns6Lei/KGhn++rRO2KCgT7aJNA==",
-      "path": "microsoft.extensions.logging.configuration/2.0.2",
-      "hashPath": "microsoft.extensions.logging.configuration.2.0.2.nupkg.sha512"
+      "sha512": "sha512-vO/244TKrt/hYYTuIr46/AEXcoB2FfUE+n9fJjXfbFHUvigIIHxjZ//DbxO1i2Vyeu+ZEpWaRucPVid5bIXGfg==",
+      "path": "microsoft.extensions.logging.configuration/2.1.0",
+      "hashPath": "microsoft.extensions.logging.configuration.2.1.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Console/2.0.2": {
+    "Microsoft.Extensions.Logging.Console/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6Bfhw152LogpEk7Au9wyomeat68k9ZedcR7CX/IdYuTu34sG5jYgiK4m1Yt089ewOaslYAOgbDIzZI0MPvm8UQ==",
-      "path": "microsoft.extensions.logging.console/2.0.2",
-      "hashPath": "microsoft.extensions.logging.console.2.0.2.nupkg.sha512"
+      "sha512": "sha512-bWTi76Hge3GehnbtSVfEZ+EApLnqT3duQkc8weT8ooZouwX6ogUZRjG/AHToEPGxTy9TBDQzaC24llxZyCtfaw==",
+      "path": "microsoft.extensions.logging.console/2.1.0",
+      "hashPath": "microsoft.extensions.logging.console.2.1.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging.Debug/2.0.2": {
       "type": "package",
@@ -5237,12 +5189,12 @@
       "path": "microsoft.extensions.options/2.1.1",
       "hashPath": "microsoft.extensions.options.2.1.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Options.ConfigurationExtensions/2.0.2": {
+    "Microsoft.Extensions.Options.ConfigurationExtensions/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xJ/KhbYXzTeVr58trRLcKExLsyrU2Y6peBIDWcbu5N/NlFdJvx1ZFZYB8fr2dhFG3Sn0AuvozvRzDEixgZZjKA==",
-      "path": "microsoft.extensions.options.configurationextensions/2.0.2",
-      "hashPath": "microsoft.extensions.options.configurationextensions.2.0.2.nupkg.sha512"
+      "sha512": "sha512-60wD22vAzOTsmgnvOoCC92sRh9ERW+eskuq41T83wRWRPYtRHWnW7f29/rMFvzBfQ6B148Tt2sjIG04ijyKZzA==",
+      "path": "microsoft.extensions.options.configurationextensions/2.1.0",
+      "hashPath": "microsoft.extensions.options.configurationextensions.2.1.0.nupkg.sha512"
     },
     "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
       "type": "package",
@@ -5356,12 +5308,12 @@
       "path": "mysql.data/8.0.11",
       "hashPath": "mysql.data.8.0.11.nupkg.sha512"
     },
-    "MySqlConnector/0.32.0": {
+    "MySqlConnector/0.40.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BsPX6w3Ctb6JSZlMPf+LNad+de6L4EWgovU5vjnkWq9m09KW9GySHwcAdWgXobPgke9uK706JzDdmRxQriUa1w==",
-      "path": "mysqlconnector/0.32.0",
-      "hashPath": "mysqlconnector.0.32.0.nupkg.sha512"
+      "sha512": "sha512-B2d52AJVHhq5pjV415woBZUgafbiWAQbWekrzwqeZhUx5wCIXstojwtx5N2gGfAHqCmY1GDuXaPS58OZHd4wdg==",
+      "path": "mysqlconnector/0.40.4",
+      "hashPath": "mysqlconnector.0.40.4.nupkg.sha512"
     },
     "Newtonsoft.Json/11.0.2": {
       "type": "package",
@@ -5377,12 +5329,12 @@
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
     },
-    "Pomelo.EntityFrameworkCore.MySql/2.0.1": {
+    "Pomelo.EntityFrameworkCore.MySql/2.1.0-rc1-final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7EvKOe8hczKfgeeG7JIlHLUb3Pc+OrM4xQwhYb1a2sNdnDMMTMH203zKeeetSP6HBaoZqaBJTAjliNtJDkGFsA==",
-      "path": "pomelo.entityframeworkcore.mysql/2.0.1",
-      "hashPath": "pomelo.entityframeworkcore.mysql.2.0.1.nupkg.sha512"
+      "sha512": "sha512-3V6fmhTxvKAU+n8HCgtt1k8RZEqgZ5QdUZhl42rt06RgcIcG2uEd0Rq8aCBADesMXAnTNdMTTkPkchOTftPO2w==",
+      "path": "pomelo.entityframeworkcore.mysql/2.1.0-rc1-final",
+      "hashPath": "pomelo.entityframeworkcore.mysql.2.1.0-rc1-final.nupkg.sha512"
     },
     "Pomelo.JsonObject/1.1.1": {
       "type": "package",
@@ -5643,33 +5595,12 @@
       "path": "system.collections.specialized/4.3.0",
       "hashPath": "system.collections.specialized.4.3.0.nupkg.sha512"
     },
-    "System.ComponentModel/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
-      "path": "system.componentmodel/4.3.0",
-      "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
-    },
     "System.ComponentModel.Annotations/4.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-IjDa643EO77A4CL9dhxfZ6zzGu+pM8Ar0NYPRMN3TvDiga4uGDzFHOj/ArpyNxxKyO5IFT2LZ0rK3kUog7g3jA==",
       "path": "system.componentmodel.annotations/4.5.0",
       "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
-    },
-    "System.ComponentModel.Primitives/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
-      "path": "system.componentmodel.primitives/4.3.0",
-      "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
-    },
-    "System.ComponentModel.TypeConverter/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
-      "path": "system.componentmodel.typeconverter/4.3.0",
-      "hashPath": "system.componentmodel.typeconverter.4.3.0.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/4.4.0": {
       "type": "package",
@@ -5839,12 +5770,12 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
-    "System.Linq.Queryable/4.3.0": {
+    "System.Linq.Queryable/4.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-In1Bmmvl/j52yPu3xgakQSI0YIckPUr870w4K5+Lak3JCCa8hl+my65lABOuKfYs4ugmZy25ScFerC4nz8+b6g==",
-      "path": "system.linq.queryable/4.3.0",
-      "hashPath": "system.linq.queryable.4.3.0.nupkg.sha512"
+      "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+      "path": "system.linq.queryable/4.0.1",
+      "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
     "System.Memory/4.5.1": {
       "type": "package",
@@ -6224,12 +6155,12 @@
       "path": "system.threading.timer/4.3.0",
       "hashPath": "system.threading.timer.4.3.0.nupkg.sha512"
     },
-    "System.ValueTuple/4.4.0": {
+    "System.ValueTuple/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BahUww/+mdP4ARCAh2RQhQTg13wYLVrBb9SYVgW8ZlrwjraGCXHGjo0oIiUfZ34LUZkMMR+RAzR7dEY4S1HeQQ==",
-      "path": "system.valuetuple/4.4.0",
-      "hashPath": "system.valuetuple.4.4.0.nupkg.sha512"
+      "sha512": "sha512-xZtSZNEHGa+tGsKuP4sh257vxJ/yemShz4EusmomkynMzuEDDjVaErBNewpzEF6swUgbcrSQAX3ELsEp1zCOwA==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },
     "System.Xml.ReaderWriter/4.3.0": {
       "type": "package",

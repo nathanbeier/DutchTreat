@@ -2,7 +2,7 @@
   "Colors": {
     "Favorite": "blue"
   },
-  "connectionString": {
+  "ConnectionStrings": {
     "DutchConnectionString": "server=localhost;user id=root;password=;persistsecurityinfo=True;port=3306;database=DutchTreat"
   },
   "Logging": {
